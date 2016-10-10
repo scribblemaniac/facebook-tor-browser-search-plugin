@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Facebook Tor Browser Search Plugin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css" integrity="sha384-gJBbs2b595+ZLUgYZqAJkBK7LZvPTdrMzu1ysyBQsDaB2YwyNufUxDgQdrI+6gdj" crossorigin="anonymous">
+  <style type="text/css">
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+ display: flex;
+ text-align: center;
+ align-items: center;
+}
+
+#logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logos img {
+  height: 250px;
+  width: 250px;
+}
+
+#install {
+  margin-right: 15px;
+}
+  </style>
+ </head>
+ <body class="container">
+  <div class="jumbotron">
+   <div id="logos">
+     <img src="torbrowser.png" alt="TorBrowser Logo">
+    <img src="facebook.png" alt="DuckDuckGo Logo">
+   </div>
+   <h1>Facebook Tor Browser Search Plugin</h1>
+   <p>Click <em>Install</em> to add the <a href="https://facebook.com/">DuckDuckGo</a> <a href="https://www.facebookcorewwwi.onion">hidden service</a> to your search bar (only works in <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a>).</p>
+   <button id="install" class="btn btn-primary btn-lg" onclick="window.external.AddSearchProvider('https://raw.githubusercontent.com/scribblemaniac/facebook-tor-browser-search-plugin/master/facebookhs.xml');">Install</button><a class="btn btn-default btn-lg" href="https://github.com/scribblemaniac/facebook-tor-browser-search-plugin">Source Code</a>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
+</html>
