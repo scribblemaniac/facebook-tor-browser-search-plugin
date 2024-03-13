@@ -2,8 +2,8 @@
 <html>
  <head>
   <title>Facebook Search Plugin for Tor Browser</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css" integrity="sha384-gJBbs2b595+ZLUgYZqAJkBK7LZvPTdrMzu1ysyBQsDaB2YwyNufUxDgQdrI+6gdj" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/slate/bootstrap.min.css" integrity="sha512-3EVe7TjxthzbTGfmRFr7zIvHjDWW7viFDgKOoTJ7S5IIrrKVN5rbPVjj0F7nT6rTyAkURnzwoujxlALvHoO9jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="search" type="application/opensearchdescription+xml" title="Facebook HS" href="https://scribblemaniac.github.io/facebook-tor-browser-search-plugin/facebookhs.xml">
   <style type="text/css">
 * {
@@ -27,22 +27,27 @@ h1 {
 }
 
 #logos {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 10em;
-  align-items: center;
+ display: flex;
+ justify-content: space-evenly;
+ font-size: 10em;
+ align-items: center;
 }
 
 #logos img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+ height: 250px;
+ width: 250px;
+ border-radius: 50%;
+}
+
+#github-icon {
+ vertical-align: baseline;
+ margin-right: 0.5rem;
 }
   </style>
  </head>
  <body>
   <div class="container">
-   <div class="jumbotron">
+   <div class="h-100 p-5 bg-primary border rounded-3">
     <div id="logos">
       <img src="torbrowser.png" alt="TorBrowser Logo">
       +
@@ -51,9 +56,9 @@ h1 {
     <h1>Facebook Search Plugin for Tor Browser</h1>
     <hr>
     <p>To install this as a custom search engine in Tor Browser, right click on the address bar and choose <em>Add "Facebook HS"</em>. See <a href="https://support.mozilla.org/en-US/kb/add-or-remove-search-engine-firefox">this Firefox support page</a> if you need more detailed instructions.</p>
-    <a class="btn btn-default btn-lg" href="https://github.com/scribblemaniac/facebook-tor-browser-search-plugin"><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg> View Source Code</a>
+    <a class="btn btn-default btn-lg" href="https://github.com/scribblemaniac/facebook-tor-browser-search-plugin"><svg id="github-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>View Source Code</a>
    </div>
   </div>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  </body>
 </html>
