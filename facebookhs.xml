@@ -4,7 +4,6 @@
   <Description>Find the people and posts that matter to you most.</Description>
   <Contact>support@facebook.com</Contact>
   <Url type="text/html" template="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/search/top/?q={searchTerms}&amp;opensearch=1" method="GET" />
-  <Url type="application/opensearchdescription+xml" rel="self" template="/osd.xml" />
   <Url type="application/x-suggestions+json"
     template="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/search/opensearch/suggestions/?q={searchTerms}" />
   <LongName>Facebook Hidden Service Search</LongName>
